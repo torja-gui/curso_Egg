@@ -6,17 +6,17 @@ package PersonaDE;
 import java.util.Date;
 
 /** @author HectorJ*/
-public class PersonaDataE {
+public class PersonaDataEU {
     private String nombre;
     private int edad;
     private char sexo;
     private double altura;
     private double peso;
 
-    public PersonaDataE() {
+    public PersonaDataEU() {
     }
 
-    public PersonaDataE(String nombre, int edad, char sexo,double peso, double altura) {
+    public PersonaDataEU(String nombre, int edad, char sexo,double peso, double altura) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;

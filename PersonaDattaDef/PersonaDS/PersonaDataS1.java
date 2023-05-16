@@ -18,19 +18,18 @@ la persona tiene sobrepeso, y la función devuelveun 1.
  */
 package PersonaDS;
 
-import PersonaDE.PersonaDataE;
+import PersonaDE.PersonaDataEU;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
  * @author HectorJ
  */
-public class PersonaDataS {
+public class PersonaDataS1 {
 
     private Scanner dato = new Scanner(System.in).useDelimiter("\n");
-
-/**public PersonaDataE persona(){
-//        PersonaDataE prs=new PersonaDataE();
+/**public PersonaDataEU persona(){
+//        PersonaDataEU prs=new PersonaDataEU();
 //        System.out.println("Nombre...");
 //        prs.setNombre(dato.nextLine());
 //        System.out.println("edad...");
@@ -53,8 +52,8 @@ public class PersonaDataS {
 //        System.out.println("Altura= "+prs.getAltura());
 //        return prs;
 //}Retorno de valores por referencia
-//    String nombre[]={"Marta","Beto","Carmelo","Maria"};nombre[i];*/
-   public PersonaDataE crerPersona() {
+    String nombre[]={"Marta","Beto","Carmelo","Maria"};nombre[i];*/
+   public PersonaDataEU crerPersona() {
         //JOptionPane.showInputDialog("Inicie introduciendo los datosd")
         System.out.println("Nombre:");//mensaje
         String nombre = dato.next();//igualar 
@@ -75,17 +74,17 @@ public class PersonaDataS {
         double peso = dato.nextInt();//Igualdad
         System.out.println("Altura:");//Mensaje 
         double altura = dato.nextDouble();//Igualdad
-        return new PersonaDataE(nombre, edad, sexo, peso, altura);
+        return new PersonaDataEU(nombre, edad, sexo, peso, altura);
         /*Retorno de valores por parametros*/
     }
-    public boolean MayorEdad(PersonaDataE prs) {
+    public boolean MayorEdad(PersonaDataEU prs) {
         boolean mayor = true;
         if (prs.getEdad() < 18) {
             mayor = false;
         }
         return mayor;
     }
-  public int calcularIMC(PersonaDataE prs){
+  public int calcularIMC(PersonaDataEU prs){
       double IMC = prs.getPeso()/(Math.pow(prs.getAltura(),2));
       if (IMC<20) {
           return-1;

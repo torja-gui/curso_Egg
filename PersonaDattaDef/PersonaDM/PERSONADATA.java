@@ -12,8 +12,8 @@ la persona tiene sobrepeso, y la función devuelveun 1.
  */
 package PersonaDM;
 
-import PersonaDE.PersonaDataE;
-import PersonaDS.PersonaDataS;
+import PersonaDE.PersonaDataEU;
+import PersonaDS.PersonaDataS1;
 
 /** @author HectorJ*/
 public class PERSONADATA {
@@ -23,13 +23,13 @@ public class PERSONADATA {
      */
     public static void main(String[] args) {
         //Acceso al servicio PersonDataS
-        PersonaDataS prsn=new PersonaDataS();
+        PersonaDataS1 prsn=new PersonaDataS1();
         
         //Lo que devuelba la funcion prsn.crearPersona() se guarda en la variable p1
-        PersonaDataE p1=prsn.crerPersona();
-        PersonaDataE p2=prsn.crerPersona();
-        PersonaDataE p3=prsn.crerPersona();
-        PersonaDataE p4=prsn.crerPersona();
+                PersonaDataEU p1=prsn.crerPersona();
+                PersonaDataEU p2=prsn.crerPersona();
+                PersonaDataEU p3=prsn.crerPersona();
+                PersonaDataEU p4=prsn.crerPersona();
         //Ingresarle variables al arreglo por cordenadas absolutas
         int[] IMC=new int[4]; 
         IMC[0]= prsn.calcularIMC(p1);
